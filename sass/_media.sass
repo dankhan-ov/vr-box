@@ -1,0 +1,460 @@
+@import '_vars'
+
+
+// resolution =>  1200px (extra large) .col-xl-
+// resolution =>  992px  (large)       .col-lg
+// resolution =>  768px  (medium)      .col-md-
+// resolution =>  576px  (small)       .col-sm-
+// resolution  <  576px  (extra small) .col-
+
+
+// 992px - 1199px lg
+@media screen and ( max-width:1199px)
+  // header
+  .header
+    #dino  
+      transform: translate(150px,-120px)
+  // describtion
+  .describtion
+    &_vr-panel
+      transform: scale(0.7) translate(50px,-80px)
+  // advantages
+  .advantages
+    &_figure
+      display: none
+  //order
+  .order
+    &_form
+      padding: 32px 45px 36px 45px
+  // tutorial
+  .tutorial
+    height: 640px
+    &_step
+      &_number
+        transform: translateX(-4px) translateY(-25px)
+  // compatibility
+  .compatibility  
+    &_heading h2
+      width: 450px
+    &_all-os
+       width: 430px
+    &_describtion
+      padding-top: 45px
+      img
+        transform: scale(0.8) translate(-50px,50px)
+      p
+        padding-left: 40px
+  // games
+  .games
+    &_ads
+      width: 1000px
+      .game
+        p
+          width: 250px
+    button
+      transform: translateX(335px)
+  // feedback
+  .feedback
+    &_figure
+      display: none
+
+
+// 768px - 991px md
+@media screen and ( max-width:991px) 
+  // header
+  .header
+    #dino
+      transform: scale(0.8) translate(480px,-420px)
+    #vrbox
+      transform: scale(0.7) translateX(-25%)
+  // describtion
+  .describtion
+    padding-bottom: 80px
+    &_vr-panel
+      transform: scale(1) translate(10px,75px)
+  // advantages
+  .advantages
+    &_block
+      &__first
+        img
+          margin-bottom: 10px
+      &__second
+        img
+          margin-bottom: 50px
+  // order
+  .order
+    &_form
+      width: 350px
+    &-wrapper
+      padding: 8.5rem 0
+    &-heading h2
+      font-size: 2.5rem
+      width: 300px
+      line-height: 30px
+    &_feature
+      width: 310px
+      font-size: 14px
+      height: 70px
+      &::after
+        content: ''
+        position: absolute
+        top: 0px
+        right: -58px
+        display: block 
+        border: 35px solid transparent
+        border-left-color: $icon-color
+    &_advantages
+      ul
+        justify-content: flex-start
+        flex-wrap: wrap
+        width: 400px
+        li
+          font-size: 14px
+          &:first-child
+            width: 250px
+            margin-bottom: 30px
+          &:last-child
+            width: 150px
+  // advantages-2
+  .advantages-2
+    &_figure-1
+      display: none
+    &_figure-2
+      display: none
+    &_block
+      &__first
+        img
+          margin-bottom: -50px
+          transform: scale(1) translate(-180px,-25px)
+        margin-bottom: 200px
+      &__second
+        img
+          margin-bottom: -50px
+  // tutorial
+  .tutorial
+    height: 1000px
+    &_step
+      &:nth-child(1), &:nth-child(2)
+        margin-bottom: 100px
+      &_number
+        transform: translateX(-64px) translateY(-25px)
+  // compatibility
+  .compatibility
+    &_describtion
+      p
+        padding-left: 0
+        width: 500px  
+    &_figure
+      display: none
+  // games
+  .games
+    &_ads
+      flex-direction: column
+      width: 200px
+      margin: 0 auto
+      .game
+        p
+          width: 350px
+    button
+      margin-top: 5rem
+      transform: translateX(260px)
+  // work
+  .work
+    &_plan
+      &_step
+        margin-bottom: 60px
+
+// 576px - 767px sm
+@media screen and ( max-width:767px)
+  // header
+  .header, .footer
+    .banner
+      height: 116px
+      &_logo
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+        p
+          font-size: 1.6rem
+        img
+          transform: scale(0.8)
+      &_phone
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 350px
+        margin-left: 10px
+        a
+          margin-bottom: 2px
+    .top-heading
+      h1, p
+        font-size: 2.5rem
+    .btn
+      transform: scale(0.8) translateX(-30px)
+    #vrbox
+      transform: scale(0.6) translate(-150px, 50px)
+    #dino
+      transform: scale(0.7) translate(300px,-420px)
+  // describtion
+  .describtion
+    .wrapper
+      padding-bottom: 80px
+    &_describing
+      p
+        width: 520px
+    &_bundles
+      flex-wrap: wrap
+      width: 500px
+      & > li:first-child
+        margin-bottom: 20px
+    &_vr-panel
+      transform: scale(1) translate(-40px,80px)
+  // advantages
+  .advantages
+    background: #fff
+  // order
+  .order
+    &-wrapper
+      padding: 5rem 0
+    &_feature
+      width: 220px
+      font-size: 14px
+      height: 90px
+      &::after
+        content: ''
+        position: absolute
+        top: 0px
+        right: -75px
+        display: block 
+        border: 45px solid transparent
+        border-left-color: $icon-color
+    &_advantages
+      ul
+        li
+          &:first-child
+            width: 220px
+    &_form
+      width: 260px
+      padding: 16px 32px 18px 32px
+      margin-top: 50px
+      h3
+        font-size: 1.6rem
+      small p
+        font-size: 1rem
+      &_btn
+        font-size: 1.2rem 
+      form
+        input
+          font-size: 1.6rem
+          &::placeholder
+            font-size: 1.6rem
+  // advantages-2
+  .advantages-2
+    &_block
+      &__first
+        img
+          transform: scale(1) translate(-130px,-25px)
+  // tutorial
+  .tutorial
+    height: 1700px
+    &_step
+      p
+        text-align: center
+      &_number
+        transform: translateX(-4px) translateY(-25px)
+      &_image
+        width: 220px
+        margin: 0 auto
+  // compatibility
+  .compatibility
+    &_describtion
+      p
+        padding-left: 0
+        width: 500px
+  // games
+  .games
+    button
+      transform: translateX(62%)
+
+// under 575px xs
+@media screen and ( max-width:575px)
+  // header
+  .header
+    height: 500px
+    .banner
+      height: 116px
+      &_logo
+        display: flex
+        align-items: center
+        p
+          font-size: 1.2rem
+          letter-spacing: -0.25px
+        img
+          transform: scale(0.7)
+          margin-right: 0
+      &_phone
+        padding-left: 10px
+        width: 250px
+        p,a
+          font-size: 1.4rem          
+        a
+          margin-bottom: 2px
+    .top-heading
+      margin-top: 50px
+      h1, p
+        font-size: 1.5rem
+      p
+        margin-top: 5px
+        margin-bottom: 5px
+    .btn
+      transform: scale(0.6) translateX(-87px)
+    #vrbox
+      transform: scale(0.4) translate(-310px, -30px)
+    #dino
+      transform: scale(0.5) translate(110px,-690px)
+  // describtion
+  .describtion
+    padding-bottom: 0px !important
+    .wrapper
+      padding: 46px 0px 44px
+      .section-heading h2
+        font-size: 22px
+    &_describing
+      p
+        width: 282px
+        font-size: 13px
+        line-height: 1.5
+    &_btn
+      font-size: 10px
+      padding: 0 15px
+      width: 100%
+    &_vr-panel
+      display: none
+    &_vr-panel__mobile
+      display: block
+      transform: translate(-90px,0px) scale(0.6)
+  // advantages
+  .advantages
+    &_block
+      padding-right: 60px
+      h3
+        width: 264px
+        font-size: 1.6rem
+        margin-bottom: 20px
+      &__first
+        margin-bottom: 70px
+        p
+          width: 255px
+        img
+          transform: scale(1.1)
+        h3::before
+          transform: scale(0.8) translate(15px,-10px)
+      &__second
+        p
+          width: 260px
+        img
+          transform: scale(1) translateX(-10px)
+        h3::before
+          transform: scale(0.8) translate(15px,-10px)
+    &_describtion
+  // order
+  .order
+    height: 800px
+    background-size: cover
+    background-position: 65% 10%
+    &-wrapper
+      padding: 5rem 0 1rem
+    &_form
+      width: 290px
+    &_feature
+      width: 250px
+
+  // advantages-2
+  .advantages-2
+    display: none
+  // tutorial
+  .tutorial
+    &_header h2
+      font-size: 22px
+  // compatibility
+  .compatibility
+    &_heading h2
+      font-size: 22px
+      margin-bottom: -25px
+    &_all-os
+      transform: scale(0.7) translateX(-20%)
+      margin-bottom: -105px
+    &_describtion
+      transform: scale(0.7) translateX(-100px)
+      p
+        text-align: center
+        transform: scale(0.9)
+  // video
+  .video
+    &_header h2
+      font-size: 22px
+  // games
+  .games
+    &_ads
+      .game
+        p
+          width: 200px
+    button
+      width: 50vw
+  //feedback  
+  .feedback
+    padding: 60px 0 40px
+    &_heading h2
+      font-size: 22px
+    &_clients
+      &_client
+        padding: 10px 25px 20px
+        .client_describtion
+          width: 250px
+          img
+            transform: scale(0.7)
+          h4
+            font-size: 14px
+        p
+          font-size: 12px
+          width: 100%
+  // work
+  .work
+    padding: 75px 0
+    &_heading h2
+      font-size: 22px
+      margin-bottom: 25px
+  // questions?
+  .questions
+    padding: 25px 0 30px
+    &_heading h2
+      font-size: 28px
+      margin-bottom: 20px
+    div
+      a
+        font-size: 17px
+  // footer
+  .footer
+    .banner
+      height: 116px
+      &_logo
+        display: flex
+        align-items: center
+        p
+          font-size: 1.2rem
+          letter-spacing: -0.25px
+        img
+          transform: scale(0.7)
+          margin-right: 0
+      &_phone
+        padding-left: 10px
+        width: 250px
+        p,a
+          font-size: 1.4rem          
+        a
+          margin-bottom: 2px
+  // popup
+  .popup, .popup2, .popup3, .popup4,
+    &-close
+      span
+        transform: translate(0px,-10px)
