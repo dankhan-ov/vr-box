@@ -1,3 +1,3 @@
-# vr-box
+# VR Box headset
 
-https://dankhan-ov.github.io/vrBox-lp/
+https://khanchenkov.github.io/vrBox-lp/
